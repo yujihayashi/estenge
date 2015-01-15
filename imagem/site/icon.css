@@ -1,0 +1,8 @@
+.icon{ background:url("icon.png") top left no-repeat; }
+.icon-marker{ width:102px; height:130px; background-position:-1px -1px; }
+.icon-cycle-right{ width:49px; height:58px; background-position:-1px -132px; }
+.icon-cycle-left{ width:49px; height:58px; background-position:-51px -132px; }
+.icon-phone{ width:43px; height:35px; background-position:-1px -191px; }
+.icon-mail{ width:46px; height:34px; background-position:-45px -191px; }
+.icon-phone-sm{ width:20px; height:16px; background-position:-1px -227px; }
+
