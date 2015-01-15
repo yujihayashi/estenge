@@ -5,20 +5,20 @@
 FUNÇÕES PADRÕES START
 *********************************************************************/
 .border-radius(@style) {
-    -webkit-border-radius: @style;
-    -moz-border-radius: @style;
-    border-radius: @style;
+	-webkit-border-radius: @style;
+	-moz-border-radius: @style;
+	border-radius: @style;
 }
 .box-shadow(@style, @c) when (iscolor(@c)) {
-    -webkit-box-shadow: @style @c;
-    box-shadow:         @style @c;
+	-webkit-box-shadow: @style @c;
+	box-shadow:         @style @c;
 }
 .box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
-    .box-shadow(@style, rgba(0, 0, 0, @alpha));
+	.box-shadow(@style, rgba(0, 0, 0, @alpha));
 }
 
 .clear, .first{
-    clear:both;
+	clear:both;
 }
 /*********************************************************************
 FUNÇÕES PADRÕES END
@@ -42,14 +42,75 @@ a, button  {transition: all 0.25s ease 0s;}
 /*
 FONTS START
 **********************************************************************************************/
-.box-chamada {font-family: 'robotoblack', Arial, sans-serif;font-weight: normal;}
+.site-header .navbar-nav, .site-header .line-1 strong {font-family: 'latoblack', Arial, sans-serif;font-weight: normal;}
+.box-chamada .box-header strong, .btn, .text-phone strong {font-family: 'latoheavy', Arial, sans-serif;font-weight: normal;}
+.footer-header {font-family: 'latolight', Arial, sans-serif;font-weight: normal;}
+.box-chamada .box-header, .box-marcas .box-header, .text-phone, .text-hour {font-family: 'latothin', Arial, sans-serif;font-weight: normal;}
 /**********************************************************************************************
 FONTS END
 */
 /*
 ESTRUTURA START
 **********************************************************************************************/
+.extra-geral {
+	background: url(../imagem/site/bg-interna.jpg) no-repeat center top;min-width: 960px;
+}
+.extra-header {
+	.site-header {
+		height: 177px;
+		.navbar {border:0;.border-radius(0);margin:0;}
+		.navbar-header {
+			width: 250px;float: left;text-align: center;padding-top:80px;
+			.navbar-brand {
+				display: block;float: none;margin:0;padding:0;
+				img {display: inline-block;}
+			}
+		}
+		.header-left, .header-right {float: left;width: 344px;}
+		.header-left {
+			.navbar-nav {margin-right: 20px;}
+		}
+		.header-right {
+			.line-1 {padding-left: 44px;}
+			.navbar-nav {margin-left: 20px;}
+		}
+		.navbar-nav {
+			font-size:16px;text-transform: uppercase;
+			> li {
+				a {
+					color: #FFF;line-height: 1;padding:15px 20px 14px;
+					&:hover {text-decoration: underline;}
+				}
+			}
+		}
+		.line-1 {height: 110px;color: #525260;font-size: 18px;padding-top:70px;}
+	}
+}
 
+
+.extra-footer {
+	.footer-header {display: block;text-transform: uppercase;font-size: 22px;color: #444;margin-bottom: 6px;}
+	.site-footer {font-size: 14px;}
+	.menu-footer {
+		text-transform: uppercase;
+		> li {margin-bottom: 8px;}
+	}
+	.pagamento {
+		.heading {color: #444;font-size: 18px;margin-top:5px;}
+	}
+	small {font-size: 11px;}
+	.email {
+		.icon-mail {margin-top:10px;}
+		.footer-header {margin-bottom: 0;}
+	}
+	.address {
+		.icon-marker {margin-top:10px;}
+	}
+}
+
+.home {
+	.extra-geral {background-image: url(../imagem/site/bg-home.jpg);}
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -59,6 +120,64 @@ CLASSES START
 [class^='lista-'], [class^='lista-'], [class^='menu-'], [class^='menu-'] ul, .cycle-slideshow {list-style:none;margin-bottom:0;padding-left:0;}
 .btn-gray {background: #EEE;color:#C93F2A;}
 .btn-rounded {-webkit-border-radius: 150px;-moz-border-radius: 150px;border-radius: 150px;}
+.btn.plus {
+	position: relative;height: 40px;font-size: 14px;text-transform: uppercase;padding:11px 20px;
+	&:hover {background-color: #CD494D;text-decoration: underline;}
+	&:after {width: 11px;height: 40px;background: url(../imagem/site/btn-right.png) no-repeat left top;position: absolute;right: -9px;top: -1px;content:" ";}
+}
+.box-banner {
+	position: relative;margin:0 auto 36px;
+	&, .cycle-slideshow, .cycle-slideshow li {width: 900px;height: 304px;}
+	.cycle-slideshow {
+		position: relative;z-index: 1;overflow: hidden;.border-radius(5px);
+	}
+	.cycle-nav {
+		position: absolute;z-index: 3;left: 0;right: 0;bottom: 10px;
+	}
+	.cycle-prev, .cycle-next {position: absolute;top: 50%;margin-top:-29px;z-index: 4;}
+	.cycle-prev {left: 0;}
+	.cycle-next {right: 0;}
+	.mask-left, .mask-right {position: absolute;z-index: 2;width: 120px;height: 131px;background: no-repeat left top;bottom: 0;}
+	.mask-left {background-image:url(../imagem/site/banner-mask-left.png);left: 0;}
+	.mask-right {background-image:url(../imagem/site/banner-mask-right.png);right: 0;}
+}
+.box-chamada {
+	height: 396px;
+	.box-header {
+		line-height: .9;font-size: 36px;text-transform: uppercase;
+		strong {display: block;font-size: 44px;}
+	}
+	.plus {margin-top:10px;}
+}
+.box-marcas {
+	position: relative;
+	.box-content {padding:0 60px;position: relative;}
+	.cycle-slideshow, .cycle-slideshow li {
+		height: 110px;
+	}
+	.cycle-slideshow {
+		overflow: hidden;width: 100% !important;
+		li {
+			text-align: center;
+			img {max-width: 97%;vertical-align: middle;display: inline-block;}
+		}
+	}
+	.cycle-prev, .cycle-next {
+		position: absolute;top: 50%;margin-top:-25px;text-align: left;text-indent: -1000px;overflow: hidden;width: 51px;height: 51px;background: no-repeat left top;
+		&.disabled {background-position: -51px top;}
+	}
+	.cycle-prev {left:0;background-image:url(../imagem/site/cycle-left.png);}
+	.cycle-next {right:0;background-image:url(../imagem/site/cycle-right.png);}
+}
+
+.cycle-nav {
+	text-align: center;
+	span {
+		display: inline-block;width: 15px;height: 15px;text-indent: -1000px;overflow: hidden;background: url(../imagem/site/cycle-nav.png);cursor: pointer;
+		+ span {margin-left: 5px;}
+		&.cycle-pager-active {background-position: -15px top;}
+	}
+}
 
 .imagem {display: inline-block;overflow: hidden;max-width: 100%;}
 .imagem-rounded {-webkit-border-radius: 150px;-moz-border-radius: 150px;border-radius: 150px;}
@@ -67,6 +186,10 @@ CLASSES START
 
 .space {width:1%;display:inline-block;height:100%;vertical-align:middle;}
 .relative {position: relative;}
+
+.text-phone {font-size: 26px;color: #777;display: inline-block;line-height: 1;}
+.text-week {display: block;font-size: 13px;color: #666;text-transform: uppercase;}
+.text-hour {display: block;font-size: 26px;color: #777;}
 /**********************************************************************************************
 CLASSES END
 */
@@ -81,14 +204,14 @@ JQUERY UI END
 
 }
 @media (max-width: 767px) {
- /*    .site-geral:before {content:"TABLET";}*/
+	/*    .site-geral:before {content:"TABLET";}*/
 }
 @media (max-width: 480px) {
- /*#GERAL:before {content:"MOBILE";}*/
+	/*#GERAL:before {content:"MOBILE";}*/
 }
 @media (min-width: 768px) and (max-width: 980px) {
 
 }
 @media (min-width: 981px) and (max-width: 1200px) {
- /*#GERAL:before {content:"ACIMA DE TABLET";}*/
+	/*#GERAL:before {content:"ACIMA DE TABLET";}*/
 }

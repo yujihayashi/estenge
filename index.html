@@ -36,34 +36,28 @@
 				<div class="site-header">
 					<div class="container">
 						<nav class="navbar navbar-default" role="navigation">
-							<div class="navbar-header">
-								<a class="navbar-brand" href="/" title="Voltar para a página inicial">Title</a>
-							</div>
-						
-							<div class="collapse navbar-collapse navbar-ex1-collapse">
-								<ul class="nav navbar-nav">
-									<li class="active"><a href="#">Link</a></li>
-									<li><a href="#">Link</a></li>
-								</ul>
-								<form class="navbar-form navbar-left" role="search">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Search">
-									</div>
-									<button type="submit" class="btn btn-default">Submit</button>
-								</form>
+
+							<div class="header-left clearfix">
+								<div class="line-1">
+									
+								</div> <!-- .line-1 -->
 								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">Link</a></li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li><a href="#">Separated link</a></li>
-										</ul>
-									</li>
+									<li><a href="#">Sobre a<br> Estenge</a></li>
+									<li><a href="#">Nossos<br> produtos</a></li>
 								</ul>
-							</div><!-- /.navbar-collapse -->
+							</div> <!-- .header-left -->
+							<div class="navbar-header">
+								<a class="navbar-brand" href="/" title="Voltar para a página inicial"><img src="/imagem/site/estenge.png" alt="Logo Estenge"></a>
+							</div>
+							<div class="header-right clearfix">
+								<div class="line-1">
+									<span class="icon-phone-sm"></span> <span class="text"><span>LIGUE:</span>  <strong>(91) 3241 1088</strong> </span>
+								</div> <!-- .line-1 -->
+								<ul class="nav navbar-nav">
+									<li><a href="#">Orçamento<br> online</a></li>
+									<li><a href="#">Fale com<br> o vendedor</a></li>
+								</ul>
+							</div> <!-- .header-right -->
 						</nav>
 					</div> <!-- .container -->
 				</div> <!-- .site-header -->
@@ -71,7 +65,59 @@
 			<div class="extra-central">
 				<div class="site-central" id="content">
 					<div class="container">
-						
+						<div class="box-banner">
+							<ul class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-pager=".box-banner .cycle-nav" data-cycle-next=".box-banner .cycle-next" data-cycle-prev=".box-banner .cycle-prev" data-cycle-easing="easeInOutExpo" data-cycle-log="false">
+								<li><a href="#"><img src="/imagem/site/banner/obra.jpg" alt="Sua obra mais completa!"></a></li>
+								<li><a href="#"><img src="/imagem/site/banner/obra.jpg" alt="Sua obra mais completa!"></a></li>
+								<li><a href="#"><img src="/imagem/site/banner/obra.jpg" alt="Sua obra mais completa!"></a></li>
+							</ul>
+							<a href="javascript:void(0);" class="cycle-prev"><span class="icon-cycle-left"></span></a>
+							<a href="javascript:void(0);" class="cycle-next"><span class="icon-cycle-right"></span></a>
+							<div class="cycle-nav"></div>
+							<span class="mask-left"></span><span class="mask-right"></span>
+						</div> <!-- .box-banner -->
+						<div class="row">
+							<div class="col-xs-4 col-xs-offset-1">
+								<div class="box-chamada">
+									<h2 class="box-header">
+										Sobre a <strong>Estenge</strong>
+									</h2>
+									<div class="box-content">
+										<p>
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+										</p>
+										<a href="#" class="plus btn btn-danger">Saiba mais</a>
+									</div> <!-- .box-content -->
+								</div> <!-- .box-chamada -->
+							</div> <!-- .col-xs-4 -->
+							<div class="col-xs-4 col-xs-offset-3">
+								<div class="box-chamada">
+									<h2 class="box-header">
+										Orçamento <strong>Online</strong>
+									</h2>
+									<div class="box-content">
+										<p>
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+										</p>
+										<a href="#" class="plus btn btn-danger">Faça seu orçamento</a>
+									</div> <!-- .box-content -->
+								</div> <!-- .box-chamada -->
+							</div> <!-- .col-xs-4 -->
+						</div> <!-- .row -->
+						<div class="box-marcas">
+							<h2 class="box-header h1 text-center">MARCAS DISTRIBUÍDAS</h2>
+							<div class="box-content">
+								<ul class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-next=".box-marcas .cycle-next" data-cycle-prev=".box-marcas .cycle-prev" data-cycle-easing="easeInOutExpo" data-cycle-log="false" data-cycle-carousel-visible="4" data-cycle-carousel-fluid="true" data-allow-wrap="false">
+									<li><span class="space"></span><img src="/imagem/site/marcas/amanco.jpg" alt="Logo Amanco"></li>
+									<li><span class="space"></span><img src="/imagem/site/marcas/deca.jpg" alt="Logo Deca"></li>
+									<li><span class="space"></span><img src="/imagem/site/marcas/denver.jpg" alt="Logo Denver"></li>
+									<li><span class="space"></span><img src="/imagem/site/marcas/suvinil.jpg" alt="Logo Suvinil"></li>
+									<li><span class="space"></span><img src="/imagem/site/marcas/suvinil.jpg" alt="Logo Suvinil"></li>
+								</ul>
+								<a href="javascript:void(0);" class="cycle-prev">Anterior</a>
+								<a href="javascript:void(0);" class="cycle-next">Próximo</a>
+							</div> <!-- .box-content -->
+						</div> <!-- .box-marcas -->
 					</div> <!-- .container -->
 				</div> <!-- .site-central -->
 			</div> <!-- .extra-central -->
@@ -79,7 +125,80 @@
 				<div class="extra-footer">
 					<div class="site-footer">
 						<div class="container">
-							<a href="http://www.libradesign.com.br" target="_blank" title="Libra Design"><img src="/imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
+							<hr>
+							<div class="row">
+								<div class="col-xs-3">
+									<span class="footer-header">NAVEGUE</span>
+									<ul class="menu-footer">
+										<li><a href="/">HOME</a></li>
+										<li><a href="#">SOBRE A ESTENGE</a></li>
+										<li><a href="#">NOSSOS PRODUTOS</a></li>
+										<li><a href="#">ORÇAMENTO ONLINE</a></li>
+										<li><a href="#">FALE COM O VENDEDOR</a></li>
+									</ul>
+								</div> <!-- .col-xs-3 -->
+								<div class="col-xs-4">
+									<ul class="media-list">
+										<li class="media phone">
+											<span class="pull-left"><br><span class="icon-phone"></span></span>
+											<div class="media-body">
+												<span class="footer-header">NOSSOS TELEFONES:</span>
+												<span class="text-phone"><span>91.</span> <strong>3241 1088</strong></span> <br>
+												<span class="text-phone"><span>91.</span> <strong>3230 2529</strong></span>
+											</div> <!-- .media-body -->
+										</li>
+										<li class="media email">
+											<span class="pull-left"><span class="icon-mail"></span></span>
+											<div class="media-body">
+												<span class="footer-header">EMAIL:</span>
+												<a href="mailto:contato@estenge.com.br">contato@estenge.com.br</a>
+											</div> <!-- .media-body -->
+										</li>
+									</ul>
+								</div> <!-- .col-xs-4 -->
+								<div class="col-xs-5">
+									<div class="media address">
+										<span class="pull-left"><span class="icon-marker"></span></span>
+										<div class="media-body">
+											<span class="footer-header">ENDEREÇO:</span>
+											<p>
+												Tv.: D. Romualdo de Seixas, 960
+												Umarizal – Belém /Pa
+											</p>
+											<br>
+											<div class="row">
+												<div class="col-xs-6">
+													<span class="text-week">Segunda à Sexta</span>
+													<span class="text-hour">8h às 18h</span>
+												</div> <!-- .col-xs-6 -->
+												<div class="col-xs-6">
+													<span class="text-week">Sábados</span>
+													<span class="text-hour">8h às 13h</span>
+												</div> <!-- .col-xs-6 --> 
+											</div> <!-- .row -->
+										</div> <!-- .media-body -->
+									</div> <!-- .media -->
+								</div> <!-- .col-xs-5 -->
+							</div> <!-- .row -->
+							<hr>
+							<div class="row">
+								<div class="col-xs-7">
+									<div class="media pagamento">
+										<span class="pull-left heading">Aceitamos</span>
+										<div class="media-body">
+											<img src="/imagem/site/formas-pagamento.png" alt="Cartão Mastercard, Maestro, Visa, Visa Electron, American Express">
+										</div> <!-- .media-body -->
+									</div> <!-- .media -->
+								</div> <!-- .col-xs-7 -->
+								<div class="col-xs-5 text-right">
+									<span class="small text-muted">
+										© 2015. Todos os direitos reservados a Estenge Material de Construção<br>
+										<a href="http://www.libradesign.com.br" target="_blank" title="Libra Design"><img src="/imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
+									</span>
+									<br>
+									<br>
+								</div> <!-- .col-xs-5 -->
+							</div> <!-- .row -->
 						</div> <!-- .container -->
 					</div> <!-- .site-footer -->
 				</div> <!-- .extra-footer -->
